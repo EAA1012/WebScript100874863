@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(nightsky.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+@keyframes rotate{
+    from{transform: rotate(360deg)}
+}
+
+@keyframes slideLeft{
+
+    from{transform: translateX(300%)}
+}
+
+h1{
+    animation-name: rotate;
+    animation-duration: 500ms;
+}
+header {
+    font-family:'Oswald', sans-serif;
+    font-size: 38px;
+    color: rgb(184, 182, 182);
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 36px;
+    
+    padding: 0;
+}
+
+nav ul li a {
+    color: rgb(184, 182, 182);
+    text-decoration: none;
+    display:block;
+    padding: 15px;
+    animation-name: slideLeft;
+    animation-duration: 500ms;
+}
+nav a:hover{
+
+    background-color: black;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    color: white;
+    position: bottom;
+    bottom: 0;
+    width: 100%;
+}
